@@ -1,0 +1,31 @@
+h1{
+    color: darkblue;
+}
+
+.hexadecimal{
+    color: #DE3163;
+}
+
+h2{
+    color: rgb(0,255,0);
+}
+
+.rgba{
+    color: rgba(240,25,230, 0.7);
+}
+
+h3{
+    color: hsl(300,75%,45%);
+}
+
+.hsla{
+    color: hsla(360, 80%, 10%, 1);
+}
+
+h4{
+    color: darkgreen;
+}
+
+.darkorangetext{
+    color: darkorange;
+}

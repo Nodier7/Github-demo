@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Form</title>
+</head>
+<body>
+   <h1>This is an example of form</h1>
+
+   <form action="./action.html">
+    
+       <label for="firstName">First Name</label>
+       <input type="text" id="firstName"> <br>
+
+       <label for="surName">Last Name</label>
+       <input type="text" id="surName"><br>
+
+       <label for="dob">Date of Birth</label>
+       <input type="date" id="dob"><br>
+
+       <label for="email">Email</label>
+       <input type="email" id="email">
+
+       <div><h4>Sex</h4>
+          <input type="Radio" id="male">
+          <label for="male">Male</label>
+       
+          <input type="Radio" id="Female">
+          <label for="female">Female</label>
+       </div>
+       <br>
+
+       <div><h5>Marital status</h5>
+          <input type="checkbox" id="single">
+          <label for="single">Single</label>
+
+          <input type="checkbox" id="married">
+          <label for="married">Married</label>
+       </div>
+       <br>
+       
+       <p>
+          <label> What's your favourite colour?</label>
+          <select id="setcolor">
+         
+             <option value=""#ff0000">Red</option>
+             <option value=""#00ff00">Green</option>
+             <option value=""#0000ff">Blue</option>
+             <option value=""#00ffff">Cyan</option>
+             <option value=""ff00ff">Magenta</option>
+             <option value=""#ffff00">Yellow</option>
+             <option value=""#000000">Black</option>
+             <option value=""#ffffff">White</option>
+
+          </select>
+       </p>
+
+       <p>
+          <label>Please describe yourself in a few words</label>
+       </p>
+
+       <p>
+          <textarea id="txtAnswer"
+             rows="10"
+             cols="40"></textarea>
+
+       </p>
+
+       <p>
+          <input type="submit"  value ="Submit Info">
+       </p>
+       
+   </form>
+    
+   <form>
+      <input type="file" id="fileUpload">
+      <input type="submit" value="Confirm Upload"
+
+   </form>
+</body>
+</html>
