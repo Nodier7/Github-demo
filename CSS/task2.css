@@ -1,0 +1,100 @@
+
+.p1{
+    font-family: verdana, geneva, tahoma, sans-serif;
+    font-style:oblique;
+    font-size: x-large; 
+    color: blue;
+    font-weight: 60px;
+    font-variant: small-caps;
+}
+
+.p2{
+    font: italic  20px verdana;
+}
+
+.p3{
+    font: 12px Georgia;
+    color: maroon;
+    text-align: left;
+    text-decoration: underline;
+    line-height: 50px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    text-decoration-color: darkblue;
+    text-decoration-style: dotted;
+
+}
+
+body{
+    background-color: yellow;
+    background-image: url(/image/dogandcat.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+    overflow: scroll;
+    background-size: cover;
+}
+
+.div1{
+    height: 300px;
+    width: 400px;
+    background:url(/image/coffee.jpg) no-repeat;
+    background-size: cover;
+}
+
+.div1{
+    border-style: solid;
+    border-color: brown;
+    border-width: 10px;
+    border-radius: 40px
+}
+
+.div2{
+    height: 300px;
+    width: 400px;
+    background:url(/image/mario.png) no-repeat;
+    background-size: cover;
+    border-style: dashed;
+    border-color: darkred;
+    border-width: 10px;
+    border-radius: 80%;
+}
+
+.div3{
+    height: 300px;
+    width: 400px;
+    background:url(/image/css3.png) no-repeat;
+    background-size: cover;
+    border-style: dotted;
+    border-color: violet;
+    border-width: 10px;
+    /*border-radius: 80%;*/
+}
+
+h1{
+  border: 2px solid red;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+   
+}
+
+h2{
+    border: 1px solid blue;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+h3{
+    border: 1px solid darkgreen;
+    text-align: center;
+    padding: 30px;
+    margin: 20px; 
+}
+/*.p3 {
+    border-bottom-style: dashed;
+    border-left-style: dashed;
+    border-color: brown;
+}*/
