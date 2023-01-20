@@ -1,92 +1,164 @@
 /*
-Margin: space outside the border
-Padding:
+What is Margin? space out the border of a HTML element.
+
+What is Padding? Space between border and content.
+
 */
+
 img[alt="mypic"]{
     width: 300px;
     height: 300px;
-    margin: 20px;
+    margin:20px 10px 0px 5px;
     border: 10px solid rebeccapurple;
-/*top, riht, bottom, left*/
-    padding: 10px
+    /* top, right, bottom, left */
+    padding:0px 10px 30px 5px;
 }
 
 img[title="pic2"]{
-    width: 100px
-    height: 100px
+    width: 100px;
+    height: 100px;
+    
 }
-
 .floatpic{
-    float: left;
+    float:left;
     margin-right: 10px;
 }
-
 p{
-    clear: right; /*right, left, both*/
+    clear: both;
 }
 
 input{
-    margin-bottom: 10px
-}
+    margin-bottom: 10px;
 
+}
 .txt{
-    width: 200px;
-    /*height: 30px; height cannot be fixed for padding to work*/
+    width: 300px;
+    
     font-size: 20px;
-    color: blueviolet;
-    padding: 5px 5px 5px 10px;
-    border: 2px solid black;
-    background-color: white;
+    color:blueviolet;
+    padding:5px 5px 5px 10px;
+    border: none;
+    border-bottom: 3px solid black;
 }
-
-#button{
-    width: 70px;
-    padding: 10px  15px  10px 15px;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    background-color: cornflowerblue;
-    border: 0px;
-    color: rgb(95, 53, 3);
-}
-
 .txt:focus{
-    border: solid white;
-    border-bottom: 3px  solid black;
-    background-color: blue;
+    border: none;
+}
+#button{
+   
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+    background-color:#ACC8E5;
+    border: 0px;
+    color: #112A46;
+   
 }
 
-.mypic1, mypic2{
+/* TASK: add text box for name, password, and a login buttun and 
+then desing them through CSS. */
+
+/*CSS Display Property
+  The display property specifies the display behavior of an element. 
+    Below are some of the common display properties we can use: 
+    
+  display:none;
+
+  none = 	The element is completely removed
+    
+  inline = Displays an element as an inline element (like <span>). 
+            Any height and width properties will have no effect
+    
+  block = Displays an element as a block element (like <p>). 
+            It starts on a new line, and takes up the whole width
+    
+  inline-block = Displays an element as an inline-level block container. 
+                  The element itself is formatted as an inline element,
+                  but you can apply height and width values */
+.mypic1, .mypic2{
     width: 150px;
     height: 150px;
     display: block;
 }
+.mypic3{
+    width: 150px;
+    height: 300px;
+    position: fixed;
+    top: 200px;
+    left: 300px;
+}
+h1{
+    display: inline-block;
+    width: 300px;
+}
 
+/* CSS Visible Property: */
+.mypic1{
+    visibility:hidden;
+}
 table{
     width: 300px;
-    border: 2px solid;
+    /* border: 2px solid; */
+    border-collapse:collapse;
 }
-
 .data{
-    visibilty: collapse;
-}
+    visibility: collapse;
+} 
 
-.div1{
+/*Position: Absolute, relative and fixed
+The position property specifies the type of positioning method 
+used for an element.
+
+  static = this is the default setting. 
+  An element set this way will position itself according the flow of the web page
+
+  relative = is positioned relative to its normal position.
+
+  fixed = is positioned relative to the viewport, 
+  which means it always stays in the same place even if the page is scrolled.
+
+  absolute = is positioned relative to the nearest positioned ancestor 
+      (instead of positioned relative to the viewport, like fixed).
+      However; if an absolute positioned element has no positioned ancestors,
+      it uses the document body, 
+      and moves along with page scrolling.
+
+  sticky = is positioned based on the user's scroll position. 
+  A sticky element toggles between relative and fixed, depending on the scroll position. 
+  It is positioned relative until a given offset position is met in the viewport 
+    - then it "sticks" in place.
+
+*/
+.div1, .div2, .div3{
     width: 200px;
     height: 200px;
-    background-color: blue;
+    background-color: #112A46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* position:sticky;
+    top:50px; */
 }
-
+.div1{
+   
+}
 .div2{
     width: 150px;
     height: 150px;
-    background-color: blueviolet;
+    background-color:blueviolet;
+   
+}
+.div3{
+    width: 100px;
+    height: 100px;
+    background-color:brown;
+    position: absolute;
+    top: 40px;
+   
+
+    
 }
 
-.div3{
-     width: 100px;
-     height: 100px;
-     background-color: brown;
-     position: sticky;
-     top: 0px;
-}
+/* TASK: Create a student registration form, style the form element with CSS.
+second task: add 5 div with different background images and use all the position property. */

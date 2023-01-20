@@ -1,0 +1,40 @@
+
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  background-color: gray;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+  z-index: 6;
+  list-style-type: none;
+}
+
+ul li{
+    float: left;
+}
+
+ul li a{
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 15px;
+}
+
+ul li a:hover{
+    background-color: chocolate;
+}
+
+.header{
+    height: 50px;
+    padding: 20px;
+    background-color: chocolate;
+    
+}
+
+body{
+    background: url(/image/dogandcat.png)  no-repeat;
+    background-size: cover;
+}
