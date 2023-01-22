@@ -74,3 +74,12 @@ ul li a:hover{
     height: 100px;
     background-color: chocolate;
 }
+
+@media (max-width: 600px){
+    ul li{
+        float: none;
+    }
+    
+}
+
+

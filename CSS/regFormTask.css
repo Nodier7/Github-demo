@@ -53,8 +53,10 @@ body{
 h1{
     margin-top: 10px;
     display: inline-block;
+    border
 }
 
 .div1{
     margin-top: 10px;
+    margin-down: 10px;
 }

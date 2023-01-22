@@ -1,0 +1,149 @@
+/* What is Z-index property? which element should be in front, behind ..
+
+which property is being used to removed bullet from list items? list-style-type:none;
+
+purpose of using float property? float element, left, right
+
+what is the usage of overflow property? 
+
+what is the difference between rem and % units
+------------------------------------------------------------------------------------------------------------------------
+
+/* Media Queries explained
+
+The @media rule is used in media queries to apply different styles 
+                                 for different media types/devices.
+
+Media queries can be used to check many things, such as:
+
+ -  width and height of the viewport
+ -  width and height of the device
+ -  orientation (is the tablet/phone in landscape or portrait mode?)
+ -  resolution
+
+Using media queries are a popular technique for delivering responsive design */
+/* Desktop-first  Mobile-first*/
+
+/*--------- Media Queries -----*/
+
+@media (min-width: 900px) and (max-width:1200px)
+{
+body{
+    background-color: blueviolet;
+}
+p{
+    font-size: 20px;
+    color:brown
+}
+
+}
+
+@media (min-width:800px) and (max-width:900px){
+    body{
+        background-color: aqua;
+    }
+    p{
+        font-size: 10px;
+        color: chartreuse;
+    }
+}
+/* when your screen size become less then 600px, the navigation bar items should be displayed as block element (on differnt line)
+through media query make the navigation bar  */
+
+/* Add two div and two heading to your HTML page and resize them as below
+screen width is between: 1200px -- 900px
+div width and height should be 400px
+heading size should be 20px.
+
+when screen width is between: 900px -- 600px
+div width and height should be 300px
+heading size should be 10px.
+*/
+
+/* ---------------------------------------------------------------------------------------------------- */
+/*Box Shadow and Text Shadow
+
+The box-shadow property attaches one or more shadows to an element
+
+it requires two values to work: 
+ - h-offset = The horizontal offset of the shadow, + value = right, - value = left
+ - v-offset = The vertical offset of the shadow, + value = below, - value = above
+
+ there are additional values you can add:
+ - color e.g. using red, or and rgba or hex(#) value. * this is required on Safari
+ - blur = The blur radius. The higher the number, the more blurred the shadow will be
+ - spread = The spread radius(size of the shadow). 
+    A positive value increases the size of the shadow, 
+    a negative value decreases the size of the shadow
+ - inset = Changes the shadow from an outer shadow (outset) to an inner shadow
+
+/* Box-Shadow
+ element {
+  box-shadow: h-offset v-offset | blur, spread, color*, inset; * required on Safari
+}
+*/
+
+.div1{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+    box-shadow: -50px 50px 70px 5px red;
+}
+
+.p1{
+    font-size: 20px;
+    text-shadow: 5px 5px 4px red ;
+}
+/*Before and After Pseudo selectors
+The ::before selector inserts something before the content of each selected element(s)
+
+Use the content property to specify the content to insert.
+
+Use the ::after selector to insert something after the content */
+
+.h1::after{
+    content: "This is added using the after selector";
+    color: red;
+    background-color: black;
+    font-size: 20px;
+}
+.h1::before{
+    content: url("/Github/Image/Cake.ico");
+    width: 20px;
+    height: 20px;
+    
+}
+input[type="submit"]{
+    width:70px;
+    height: 40px;
+}
+
+#btn:hover{
+    background-color: blueviolet;
+}
+#btn:active{
+    background-color: red;
+}
+
+/*nth child pseudo selectors
+
+The :nth-child(n) selector matches every element that is the nth child (regardless of type) 
+of its parent.
+
+n   = 1 2 3  4  5  6  7
+3n  = 3 6 9 12 15 18 21 
+3n-2= 1 4 7 10 13 16 19
+
+n  = a number, a keyword, or a formula. 3n  nth term 
+
+ it is written like this:
+ <html element, id, class>:nth-child(<number, keyword or formula>){
+
+     items inside the curly brackets will affect the items targetted
+ } */
+
+ p:nth-child(3n-3){
+    color:blueviolet;
+ }

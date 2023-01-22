@@ -1,0 +1,8 @@
+.div1{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+    box-shadow: 40px -40px 60px 5px lightblue;
+}
