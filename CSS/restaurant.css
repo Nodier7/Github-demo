@@ -1,0 +1,105 @@
+
+
+ul{
+    margin: 0px;
+    padding-bottom: 40px;
+    background-color: black;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    list-style-type: none;
+}
+
+ul li{
+      float: right;
+}
+  
+ul li a{
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      font-size: 15px;
+}
+
+.heading{
+    height: 50px;
+    padding: 0px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    Z-index: 2;
+}
+
+body{
+    background: url(/Github/image/restaurant.png)  no-repeat;
+    background-size: cover;
+}
+
+/*.heading{
+    display: inline-block;
+    width: 0px;
+}*/
+
+
+h1::after{
+    content: url("/Github/Image/plateSFK.png");
+    margin-left: 20px;
+    /*border:5px  solid  black;*/
+   /* border-radius: 50%;*/
+    width: 5px;
+    height: 5px;
+}
+
+.div1{
+    margin-top: 200px;
+   
+}
+
+/*#content1{
+    display: inline-block;
+    width:50px;
+
+}
+
+#content2{
+    display: inline-block;
+    width: 50px;
+
+}
+
+#content3{
+    display: inline-block;
+    width: 50px;
+
+}*/
+
+nav{
+
+    padding-bottom: 20px;
+}
+
+section{
+
+     height: 250px;
+}
+
+.div2{
+
+     height: 100px;
+     margin-bottom: 0px;
+     text-align: center;
+     background-color: blue;
+     color: white;
+}
+
+table{
+    position: relative;
+    margin-left: 500px;
+}
+a{
+    text-decoration-line: none;
+    color: white;
+}
+
