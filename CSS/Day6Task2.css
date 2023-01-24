@@ -5,6 +5,9 @@ html{
  --redcolor: red;
  --bluecolor: blue;
  --dredcolor: darkred;
+ --zeropx: 0px;
+ --hundredpx: 100px;
+ --2hundredpx: 200px;
 
 }
 body{
@@ -55,45 +58,45 @@ body{
 @keyframes picmoving{
     0%{
         
-        left: 100px;
-        top: 0px;
+        left: var(--zeropx);
+        top: var(--zeropx);
     }
 
     16%{
         
-        left: 100px;
-        top: 0px;
+        left: var(--hundredpx);
+        top: var(--zeropx);
     }
 
     32%{
         
-        left: 200px;
-        top: 0px;
+        left: var(--2hundredpx);
+        top: var(--zeropx);
     }
 
     48%{
-        left: 100px;
-        top: 0px;
+        left: var(--hundredpx);
+        top: var(--zeropx);
 
     }
 
     64%{
         
-        left: 100px;
-        top: 200px;
+        left: var(--hundredpx);
+        top: var(--2hundredpx);
     }
 
 
     80%{
-        left: 100px;
-        top: 0px;
+        left: var(--hundredpx);
+        top: var(--zeropx);
 
     }
 
     100%{
         
-        left: 0px;
-        top: 0px;
+        left: var(--zeropx);
+        top: var(--zeropx);
     }
 
 }
