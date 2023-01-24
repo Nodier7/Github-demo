@@ -1,0 +1,99 @@
+
+html{
+ --yellowcolor: yellow;
+ --lbluecolor: lightblue;
+ --redcolor: red;
+ --bluecolor: blue;
+ --dredcolor: darkred;
+
+}
+body{
+    background-color: var(--yellowcolor);
+}
+
+.div1{
+    height:150px;
+    margin-bottom: 50px;
+}
+
+.button1{
+    margin-top: 20px;
+    height: 50px;
+    width:100px;
+    background-color: var(--lbluecolor);
+    color: var(--redcolor);
+    font-size: 20px;
+    font-weight:normal;
+    animation-name: buttonchange;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    
+}
+
+.button1:hover{
+    background-color: var(--bluecolor);
+    color: var(--dredcolor);
+    width: 150px;
+    height: 75px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#pic1{
+    margin-top: 10px;
+    height: 200px;
+    width: 100px;
+    position: relative;
+    animation-name: picmoving;
+    animation-duration: 18s;
+    animation-delay: 3s;
+    animation-iteration-count: 4;
+    transition: height 3s top 3s;
+}
+
+@keyframes picmoving{
+    0%{
+        
+        left: 100px;
+        top: 0px;
+    }
+
+    16%{
+        
+        left: 100px;
+        top: 0px;
+    }
+
+    32%{
+        
+        left: 200px;
+        top: 0px;
+    }
+
+    48%{
+        left: 100px;
+        top: 0px;
+
+    }
+
+    64%{
+        
+        left: 100px;
+        top: 200px;
+    }
+
+
+    80%{
+        left: 100px;
+        top: 0px;
+
+    }
+
+    100%{
+        
+        left: 0px;
+        top: 0px;
+    }
+
+}

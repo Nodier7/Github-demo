@@ -1,0 +1,92 @@
+/* Local and global variables*/
+html{
+    --redcolor: red;
+    --texttsize: 25px;
+    --noborder: 0px;
+    --bluecolor: blue;
+
+}
+
+body{
+    background-color: var(--redcolor);
+    font-size: var(--textsize);
+}
+
+.p1{
+    --textsize50: 50px;
+    font-size: var(--textsizer50);
+}
+
+.p2{
+    font-size: var(--textsize50);
+}
+
+.animationdiv{
+    height: 100px;
+    width: 200px;
+    background-color: var(--bluecolor);
+    margin-top: 10px;
+    animation-name: animationpractice;
+    animation-duration: 4s;
+
+}
+
+@keyframes animationpractice{
+    from{background-color: blue;}
+    to {background-color: red;}
+}
+
+.animationdiv2{
+    height: 100px;
+    width: 200px;
+    background-color: var(--bluecolor);
+    margin-top: 10px;
+    position: relative;
+    animation-name: divmoving;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes divmoving{
+    0%{
+        background-color: blue;
+        color: red;
+        left: 0px;
+        top: 0px;
+    }
+    20%{
+        background-color: chartreuse;
+        color: white;
+        left: 200px;
+        top: 0px;
+    }
+
+    50%{
+        background-color: blueviolet;
+        color: black;
+        left: 200px;
+        top: 100px;
+
+    }
+    100%{
+        background-color: rgb(104, 237, 100 );
+        color:brown;
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+.btn1{
+    width: 100px;
+    height: 50;
+    background-color: chartreuse;
+}
+
+.btn1:hover{
+    background-color: darkblue;
+    width: 150;
+    height: 70;
+    font-size: 20px;
+}
