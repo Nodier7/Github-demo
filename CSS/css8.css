@@ -1,0 +1,94 @@
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    background-color: darkgray;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 'header header header'
+                          'nav nav nav'
+                          'mainpic mainpic mainpic'
+                          'content content verticalnav'
+                          'footer footer footer';
+
+    grid-template-rows: 100px  50px  300px auto 100px;
+    grid-template-columns: 35%  35%  30%;
+}
+
+.hedder{
+    background-color: blueviolet;
+    grid-area: header;
+}
+
+.navigation{
+    background-color: brown;
+    grid-area: nav;
+}
+
+.picarea{
+    background-color: bisque;
+    grid-area: mainpic;
+}
+
+.verticalnavigation{
+    background-color: blueviolet;
+    grid-area: verticalnav;
+}
+
+.content{
+    background-color: brown;
+    grid-area: content;
+}
+
+.footer{
+    background-color: bisque;
+    grid-area: footer;
+}
+
+.div1, .div2, .div3{
+    margin: 20px;
+    height: 100px;
+    background-color: aqua;
+    width: 350px;
+}
+
+.div1{
+    transform: translate(50px, 200px);
+}
+
+.div2{
+    transform: rotate(30 deg);
+}
+
+img{
+    height: 100px;
+    width: 150px;
+    transition: transform 3s;
+}
+
+img:hover{
+    transform: rotate(360deg);
+}
+
+.div3{
+    transform: skew(40deg, 5deg)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

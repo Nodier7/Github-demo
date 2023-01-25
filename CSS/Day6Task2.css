@@ -30,6 +30,7 @@ body{
     animation-name: buttonchange;
     animation-duration: 5s;
     animation-delay: 1s;
+    transition: background-color 3s height 3s width 3s font-size 3s font-weight 3s;
     
 }
 

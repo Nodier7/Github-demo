@@ -1,0 +1,19 @@
+
+.flexcontainer{
+
+    border: 2px solid red;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 500px;
+    flex-direction: row;
+    background-color: chartreuse;
+    flex-wrap: wrap;
+    
+}
+
+.flexcontainer div{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}

@@ -1,0 +1,28 @@
+
+body{
+    background-color: lightblue;
+}
+
+.galpic{
+    width: 100px;
+    height: 150px;
+    border:1px none blue;
+}
+
+.gallery{
+
+    border: 2px solid darkblue;
+    display: flex;
+    justify-content:space-around;
+    align-items:stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    content: cover;
+    
+}
+
+.gallery div{
+    height: 155px;
+    width: 105px;
+    background-color: white;
+}
