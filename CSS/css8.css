@@ -1,7 +1,4 @@
 
-
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -14,14 +11,14 @@
     grid-template-areas: 'header header header'
                           'nav nav nav'
                           'mainpic mainpic mainpic'
-                          'content content verticalnav'
+                          'content content verticalnavigation'
                           'footer footer footer';
 
     grid-template-rows: 100px  50px  300px auto 100px;
     grid-template-columns: 35%  35%  30%;
 }
 
-.hedder{
+.heaSder{
     background-color: blueviolet;
     grid-area: header;
 }
