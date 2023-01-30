@@ -107,7 +107,8 @@ body{
     background: url(/Github/image/sens-interdit.PNG) no-repeat;
     background-size: cover;
     color: var(--bluecolor);
-    font-weight: bold;
+    font-weight: bolder;
+    font-size:large;
     display: inline-block;
     position: relative;
     animation-name: bgpics;
@@ -115,6 +116,11 @@ body{
     animation-delay: 3s;
     animation-duration: 49s;
 
+}
+
+.div2 p{
+    display: inline-block;
+    height: 20px;
 }
 
 #sipic{
