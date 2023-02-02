@@ -22,6 +22,7 @@ body{
 .container{
     background-color: white;
     min-height: 100%;
+    /*min-width: 100%;*/
     display: grid;
     grid-template-areas: 'header'
                           'nav'
@@ -30,7 +31,7 @@ body{
                           'content'
                           'footer';
 
-    grid-template-rows: 60px  50px  250px auto auto  50px;
+    grid-template-rows: 60px  50px  250+px auto auto  50px;
     grid-template-columns: 100%;
 }
 
@@ -44,6 +45,15 @@ body{
     color: var(--bluecolor);
     font-size: 25px;
 
+}
+
+.header h1::after{
+    content: "Jésus des Nuances";
+    color: red;
+    padding-left: 10px;
+    font-size: 20px;
+    font-style: italic;
+    /*background-color: blue;*/
 }
 
 .navigation{
@@ -107,8 +117,7 @@ body{
     background: url(/Github/image/sens-interdit.PNG) no-repeat;
     background-size: cover;
     color: var(--bluecolor);
-    font-weight: bolder;
-    font-size:large;
+    font-weight: bold;
     display: inline-block;
     position: relative;
     animation-name: bgpics;
@@ -116,11 +125,6 @@ body{
     animation-delay: 3s;
     animation-duration: 49s;
 
-}
-
-.div2 p{
-    display: inline-block;
-    height: 20px;
 }
 
 #sipic{
@@ -204,6 +208,7 @@ body{
 .footer{
     background-color: var(--bluecolor);
     grid-area: footer;
+    
 }
 
 .div2 h4{
@@ -214,6 +219,7 @@ body{
 .footer h4{
     text-align: center;
     color:var(--yellowcolor);
+    
 }
 /*.content{
     

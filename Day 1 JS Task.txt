@@ -1,0 +1,7 @@
+Tasks: 1: Create a variable that stores your name and log a string to the console that greets you using template literals. 
+
+2: Create Variables storing your name, your age and your favourite film or tv series. Using template literals I want you to log a sentence including these values to the console. 
+
+3: Generate a number between 1 and 50 and log it to the console. 
+
+4: Create variables storing what you ate for breakfast, lunch and dinner yesterday and a log a sentence to the console. Without overwriting the initial variable declarations I would like you to set new variable values to what you have eaten / plan to eat today and log another sentence to the console.
