@@ -4,10 +4,12 @@
 
 const  persGreeting = (firstName, surname) =>{
 
-     console.log(`Hello ${firstName} ${surname}, I hope you're doing well`)     
-}
+     //console.log(`Hello ${firstName} ${surname}, I hope you're doing well`)     
+     return `Hello ${firstName} ${surname}, I hope you're doing well`     
+    }
 
-persGreeting("Bob", "Johnson")
+//persGreeting("Bob", "Johnson")
+console.log(persGreeting("Bob", "Johnson"))
 
 
 2//Task 2: Write a function that takes in a number and checks 
@@ -17,14 +19,16 @@ function oddEven(number){
 
     if (number % 2 === 0){
      
-      console.log(number + " is an even number")
+      //console.log(number + " is an even number")
+      return number + " is an even number"
     } else{
-    console.log(number + " is an odd number")
+    //console.log(number + " is an odd number")
+    return number + " is an odd number"
     }
 }
 
-oddEven(5)
-oddEven(10)
+console.log(oddEven(5))
+console.log(oddEven(10))
 
 //Task 3: Write an ATM function that takes in parameters of 
 //withdrawAmount and pinNumber. The function should check that 
@@ -33,23 +37,26 @@ oddEven(10)
 //balance is sufficient, approve the transaction. If not 
 //decline the transaction. 
 
-const balance = 1000.00
-const pin = 4570
+let balance = 1000.00
+let pin = 4570
 
 function ATM(withdrawAmount, pinNumber){
     if (withdrawAmount <= balance){
         if (pinNumber === pin){
-            console.log("Transaction approved")
+            //console.log("Transaction approved")
+            return "Transaction approved"
         } else{
-            console.log("Transaction declined, PIN incorrect")
+            //console.log("Transaction declined, PIN incorrect")
+            return "Transaction declined, PIN incorrect"
         }
 
     } else{
-        console.log("Transaction declined, insufficient balance")
+        //console.log("Transaction declined, insufficient balance")
+        return "Transaction declined, insufficient balance"
     }
         
 }
 
-ATM(400, 1111)
-ATM(1100, 4570)
-ATM(450, 4570)
+console.log(ATM(400, 1111))
+console.log(ATM(1100, 4570))
+console.log(ATM(450, 4570))

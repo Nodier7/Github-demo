@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript HTML DOM</h2>
+
+    <div>
+        <p id="demo" onclick= "add()">Hello</p>
+        <p onclick="this.style.backgroundColor='red'"><b>What happens when you click here?</b> method.</p>
+    </div>
+
+    <div id="main" onclick="this.innerHTML='change'">
+        <p>Playing with elements</p>
+        <p>rejerjldflkfsdsa</p>
+        <p>kqewuhwjkwefn/edwe</p>
+    </div>
+        <p id="news">News</p>
+    <div>
+
+    </div>
+
+    <script>
+       const mainVar = document.getElementById("main");
+       const demoVar= document.getElementById("demo");
+       const newsVar = document.getElementById("news")
+       //document.getElementById("main").style.backgroundcolor= "yellow";
+      // mainVar.innerHTML = "test";
+      // demoVar.style.color= "blue";
+      // mainVar.innerHTML = y.innerHTML;
+      demoVar.style.margin= "50px";
+      newsVar.style.padding = "10%";
+
+       function myFunction(){
+          document.getElementById("demo").innerHTML= "Hello World";
+       }
+
+       function add(){
+        const num1Var =  document.getElementById("num1")
+        const num2Var =  document.getElementById("num2")
+        const demoVar =  document.getElementById("demo")
+        demoVar.innerHTML = Number(num1var.innerHTML) + Number(num2Var.innerHTML)
+        //document.getElementById("demo").innerHTML= 5 + 5;
+       } 
+
+       function checkingValue(){
+        const num1Var =  document.getElementById("num1")
+        const num2Var =  document.getElementById("num2")
+        const demoVar =  document.getElementById("demo")
+        if (num1Var.innerHTML > 4){
+
+            demoVar.innerHTML = Number(num1var.innerHTML) + Number(num2Var.innerHTML)
+       
+        }  else{
+            demoVar.innerHTML = Number(num1var.innerHTML) * Number(num2Var.innerHTML)
+        
+
+        }
+
+
+       }
+
+    </script>
+</body>
+</html>

@@ -47,7 +47,7 @@ let numbers =[]
 
 for (let i = 0; i < 5; i++){
 
-    numbers[i] = Math.round(Math.random()*50 +1)
+    numbers[i] = Math.round(Math.random()*59 +1)
 }
 
 for (let i = 0; i < numbers.length; i++){
