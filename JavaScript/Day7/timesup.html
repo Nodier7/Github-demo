@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Timing</title>
+    <script src="./timesupscript.js"></script>
+</head>
+<body>
+    <h2>JavaScript Timing Task</h2>
+
+    <!--<p>Click "Try it". Wait 3 seconds, and  the page will say "Hello".</p>
+    <button onclick="setTimeout(timesup, 3000);">Try it</button>-->
+    
+
+    <div id="form1">
+      <p><h4>Answer the questions within 20 seconds and press the submit button
+        otherwise the quiz will end </h4></p>
+           
+      <form action="" >
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <p>Please select your favourite sport</p>
+        <input type="radio" id="football" name="fav_sport" value="football">
+        <label for="football">Football</label><br>
+        <input type="radio" id="basketball" name="fav_sport" value="basketball">
+        <label for="basketball">Basketball</label><br>
+        <input type="radio" id="tennis" name="fav_sport" value="tennis">
+        <label for="tennis">Tennis</label><br><br>  
+          
+        <p>Please select your age range:</p>
+        <input type="radio" id="age1" name="age" value="30">
+        <label for="age1">0 - 30</label><br>
+        <input type="radio" id="age2" name="age" value="60">
+        <label for="age2">31 - 60</label><br>  
+        <input type="radio" id="age3" name="age" value="100">
+        <label for="age3">61 - 100</label><br><br>
+
+        <p>Please select your favourite meal:</p>
+        <input type="radio" id="bf" name="breakfast" value="breakfast">
+        <label for="bf">Breakfast</label><br>
+        <input type="radio" id="lunch" name="lunch" value="lunch">
+        <label for="lunch">Lunch</label><br>  
+        <input type="radio" id="dinner" name="dinner" value="dinner">
+        <label for="dinner">Dinner</label><br><br>
+        <input type="submit" onclick="formSubmitted()" value="Submit">
+             
+      </form> 
+    </div>
+</body>
+</html>

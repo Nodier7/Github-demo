@@ -1,0 +1,17 @@
+body{
+
+    background-color: yellow;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#submit{
+    background-color: red;
+    color: black;
+}
+
+#newBtn{
+    background-color:orangered;
+    color: black;
+}

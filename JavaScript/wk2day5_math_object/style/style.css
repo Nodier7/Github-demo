@@ -1,0 +1,29 @@
+div {
+    border: 1px solid;
+    padding: 20px ;
+   
+  }
+
+  body{
+    background-color: lightblue;
+    color: darkblue;
+  }
+
+  p{
+    font-weight: bold;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+
+  #submit{
+    background-color: yellow;
+    color: darkred;
+    font-weight: bold;
+
+  }
+
+  #minNum, #maxNum{
+    background-color: lightskyblue;
+  }

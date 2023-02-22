@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <link rel="stylesheet"  href="style\style.css">
+        <script src="script\timers.js">
+            
+        </script>
+        
+        <script src="script\events.js">
+            
+        </script>
+         </head>
+
+    <body>
+
+        <form>
+            <input id="answer" type="text"/>
+            <input id="submit" type="button" value="Submit"></button>
+            <input id="newBtn" type="button" value="New">
+
+            <script>
+
+                let message = false;
+                setInterval(myTimer, 1000);
+                addEventByID(document.getElementById("submit"), "click", timerStop.bind(null,"5"));
+                document.getElementById("newBtn").addEventListener("click", displayMessage);
+                document.addEventListener("click", function(){
+                    if (message == false){
+                    document.getElementById("p2").innerHTML = "Hello World!";
+                    message = true;
+                    }
+                    else {
+                        document.getElementById("p2").innerHTML = "";
+                        message = false;
+                    }
+                });
+                 
+            </script>
+
+        
+
+            
+        </form>
+        <p id="demo"></p> 
+        <p id="p1"></p>
+        <p id="p2"></p>
+
+    </body>
+
+</html>

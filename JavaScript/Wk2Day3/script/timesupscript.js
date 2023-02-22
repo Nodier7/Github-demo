@@ -1,0 +1,4 @@
+function timesup() {
+    
+    alert("Kaboom!");
+    };
